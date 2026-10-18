@@ -1,5 +1,6 @@
 <?php
 declare(strict_types=1);
+$pdo = null;
 
 if (PHP_SAPI !== 'cli') {
     http_response_code(404);

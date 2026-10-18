@@ -29,6 +29,8 @@ if (!csrfValido($_POST['csrf_token'] ?? null)) {
     responder(419, ['ok' => false, 'mensaje' => 'La sesión expiró. Recarga la página e inténtalo nuevamente.']);
 }
 
+global $pdo;
+
 $fechaValidada = DateTimeImmutable::createFromFormat('!Y-m-d', $fecha);
 $horaValidada = DateTimeImmutable::createFromFormat('!H:i', $hora);
 $erroresFecha = DateTimeImmutable::getLastErrors();

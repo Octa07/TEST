@@ -8,6 +8,12 @@
     <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
+    <?php
+    /** @var array $citas */
+    /** @var array $insumos */
+    $citas = $citas ?? [];
+    $insumos = $insumos ?? [];
+    ?>
     <header>
         <div class="brand"><i class="fa-solid fa-calendar-check"></i><h1>SAGER · Panel administrativo</h1></div>
         <nav class="nav-tabs" aria-label="Navegación principal">

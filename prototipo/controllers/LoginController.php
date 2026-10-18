@@ -2,6 +2,7 @@
 declare(strict_types=1);
 
 require_once __DIR__ . '/../config/seguridad.php';
+$pdo = null;
 require_once __DIR__ . '/../config/conexion.php';
 require_once __DIR__ . '/../models/Usuario.php';
 

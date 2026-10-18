@@ -1,3 +1,9 @@
+<?php
+/** @var array $servicios */
+/** @var string $csrfToken */
+$servicios = $servicios ?? [];
+$csrfToken = $csrfToken ?? '';
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>

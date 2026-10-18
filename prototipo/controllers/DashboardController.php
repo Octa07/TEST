@@ -8,6 +8,7 @@ if (!esAdministrador()) {
     exit;
 }
 
+$pdo = null;
 require_once __DIR__ . '/../config/conexion.php';
 require_once __DIR__ . '/../models/Sistema.php';
 
